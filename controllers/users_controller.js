@@ -14,7 +14,7 @@ module.exports.create = async function (req, res) {
     if (req.body.password !== req.body.confirm_password) {
       return res.json(500, {
         success: false,
-        error: "Password and Confirm Password don't mactch",
+        error: "Password and Confirm Password don't match",
       });
     }
 
