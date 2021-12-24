@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8080;
 const db = require("./config/mongoose");
+const passport_jwt = require("./config/passport_jwt");
 
 app.use(express.urlencoded());
 
